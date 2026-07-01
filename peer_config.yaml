@@ -1,0 +1,19 @@
+peers:
+  - name: Maxwell School of Citizenship and Public Affairs
+    institution: Syracuse University
+    openalex_institution_id: ""
+  - name: Schar School of Policy and Government
+    institution: George Mason University
+    openalex_institution_id: ""
+  - name: Harris School of Public Policy
+    institution: University of Chicago
+    openalex_institution_id: ""
+  - name: Goldman School of Public Policy
+    institution: University of California, Berkeley
+    openalex_institution_id: ""
+  - name: Trachtenberg School of Public Policy and Public Administration
+    institution: George Washington University
+    openalex_institution_id: ""
+  - name: Humphrey School of Public Affairs
+    institution: University of Minnesota
+    openalex_institution_id: ""

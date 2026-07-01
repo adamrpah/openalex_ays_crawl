@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ays-bibliometrics"
+version = "0.1.0"
+description = "Production bibliometric reporting tools for the Andrew Young School of Policy Studies."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+  { name = "Andrew Young School of Policy Studies" }
+]
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "diskcache>=5.6",
+  "matplotlib>=3.8",
+  "openpyxl>=3.1",
+  "pandas>=2.2",
+  "pyarrow>=15",
+  "PyYAML>=6.0",
+  "requests>=2.31",
+  "tenacity>=8.2",
+  "tqdm>=4.66",
+  "typer>=0.12",
+]
+
+[project.scripts]
+ays-bibliometrics = "ays_bibliometrics.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

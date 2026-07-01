@@ -1,0 +1,44 @@
+email: "you@example.edu"
+
+paths:
+  data_dir: data
+  cache_dir: cache
+  output_dir: output
+  log_file: output/run.log
+
+openalex:
+  base_url: "https://api.openalex.org"
+  api_key: ""
+  polite_pool_email: "you@example.edu"
+  per_page: 100
+  rate_limit_seconds: 0.2
+
+roster:
+  provider: ays_website
+  website_url: "https://aysps.gsu.edu/profile/"
+  input_csv: "data/manual_roster.csv"
+  openalex_institution_id: "https://openalex.org/I1341412227"
+  manual_people: []
+
+matching:
+  candidates_per_person: 5
+  min_auto_confidence: 0.92
+  ambiguity_margin: 0.08
+  institution_keywords:
+    - "Georgia State University"
+    - "Andrew Young School"
+    - "AYS"
+
+departments:
+  - "Criminal Justice and Criminology"
+  - "Economics"
+  - "Public Management and Policy"
+  - "Social Work"
+  - "Urban Studies Institute"
+
+centers:
+  - "Center for State and Local Finance"
+  - "Center for the Comparative Study of Metropolitan Growth"
+  - "Georgia Health Policy Center"
+  - "International Center for Public Policy"
+  - "The Fiscal Research Center"
